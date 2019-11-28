@@ -1,7 +1,8 @@
 #! python3
 # phoneAndEmail.py - Finds phone numbers and email addreses on the clipboard
 
-import pyperclip, re
+import pyperclip
+import re
 
 # Phone regex
 phoneRegex = re.compile(r'''(
@@ -11,7 +12,7 @@ phoneRegex = re.compile(r'''(
     (\s|-|\.)?                      # separator
     (\d{4})                         # last 4 digits
     (\s*(ext|x|ext.)\s*(\d{2,5}))?  # extension
-)''' , re.VERBOSE)
+)''', re.VERBOSE)
 
 #  Email regex
 emailRegex = re.compile(r'''(
@@ -23,7 +24,7 @@ emailRegex = re.compile(r'''(
 
 # Find matches in clipboard text.
 text = str(pyperclip.paste())
-matches=[]
+matches = []
 for groups in phoneRegex.findall(text):
     phoneNum = '-'.join([groups[1], groups[3], groups[5]])
     if groups[8] != '':
