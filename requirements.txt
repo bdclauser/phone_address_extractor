@@ -16,7 +16,7 @@ Jinja2==2.10.3
 macholib==1.11
 Mako==1.2.2
 MarkupSafe==1.1.1
-pipenv==2018.11.26
+pipenv==2022.1.8
 pygame==1.9.6
 PyInstaller==3.6
 pyperclip==1.7.0
