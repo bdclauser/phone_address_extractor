@@ -18,7 +18,7 @@ Mako==1.2.2
 MarkupSafe==1.1.1
 pipenv==2022.1.8
 pygame==1.9.6
-PyInstaller==3.6
+PyInstaller==5.13.1
 pyperclip==1.7.0
 python-dateutil==2.8.1
 python-editor==1.0.4
